@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">MY<sub>PORTFOLIO</sub></a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section" id="home">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>GAB AMEN<br>a </span>student
+                </h1>
+                <p class="description">
+                    Welcome to my e-portfolio! I'm Gab, a 1st year student taking
+                    the program of Computer Science in Pamantasan ng Cabuyao.
+                </p>
+                <div class="action__btns">
+                    <button class="portfolio"><a href="#portfolio">PORTFOLIO</a></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="IMG_3116.JPG" alt="profile">
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <div class="section-label">
+            <h2>About Me</h2>
+        </div>
+        <div class="section__containerP">
+            <div class="content-container">
+                <div class="image-container">
+                    <img src="ABOUTME.jpeg" alt="About Me Image" class="profile-image">
+                </div>
+                <div class="text-container">
+                    <p>Hey there, I'm Artorius Gabriel Amen, a first-year student studying<br> Computer Science. 
+                        I started learning programming when I was<br> 18 years old. I love learning about how 
+                        computers work and how they<br> can help people. Besides studying, I enjoy coding, playing 
+                        games,<br> hanging out with people, and going for walks. My dream is to become<br> a programmer 
+                        and live a successful and happy life. I'm good at coding,<br> solving problems, and thinking 
+                        carefully about things. I'm always excited<br> to learn new things and explore new ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="portfolio">
+        <div class="section__container">
+            <div class="section-label">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h3>PRELIMS</h3>
+                    <a href="https://drive.google.com/drive/folders/1WLp4I9A2C336SDpYeSsZbrFz_h6i81tQ?usp=drive_link" class="icon-link">
+                        <img src="C:GDRIVE ICON.png" alt="Icon">
+                        
+                    </a>
+                </div>
+                <div class="box">
+                    <h3>MIDTERMS</h3>
+                    <a href="https://drive.google.com/drive/folders/13j9PIUUmhypDqgc5WAe6Pk7Ldurj2m1C?usp=drive_link" class="icon-link">
+                        <img src="GDRIVE ICON.png" alt="Icon">
+                        
+                    </a>
+                </div>
+                <div class="box">
+                    <h3>FINALS</h3>
+                    <a href="https://drive.google.com/drive/folders/1M5nuVJYiSq-gsmQWZ58rsJEkSJttXsfV?usp=drive_link" class="icon-link">
+                        <img src="C:GDRIVE ICON.png" alt="Icon">
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contacts">
+        <div class="section__container">
+            <div class="section-label">
+            <h2>Contact Me:</h2>
+            </div>
+            <div class="contact-icons">
+                <div class="icon">
+                    <a href="https://www.facebook.com/gab.amen.7">
+                        <img src="C:Facebook Icon (2).png" alt="Facebook">
+                    </a>
+                    <span>Facebook</span>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/i.smileyyy/">
+                        <img src="C:Instagram Icon (2).png" alt="Instagram">
+                    </a>
+                    <span>Instagram</span>
+                </div>
+                <div class="icon">
+                    <a href="tel:09065767923">
+                        <img src="Phone Icon (2).png" alt="Phone">
+                    </a>
+                    <span class="phone-number">09065767923</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="MissionVision">
+        <div class="section__containermv">
+            <div class="box-containerMV">
+                <div class="box_mv">
+                    <h1>MISSION</h1>
+                    <p>As an institution of higher learning, PnC is committed to equip individuals with knowledge, skills, and values that will enable them to achieve their professional goals and provide leadership and service for national development.</p>
+                </div>
+                <div class="box_mv">
+                    <h1>VISION</h1>
+                    <p>A premier institution of higher learning in Region IV, developing globally-competitive and value-laden professionals and leaders instrumental to community development and nation-building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
