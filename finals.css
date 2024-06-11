@@ -104,7 +104,9 @@ ul li a:hover {
     color: var(--text-light);
     margin-bottom: 1rem;
 }
-
+.ecom p {
+    color: white;
+}
 .image-row {
     display: flex;
     justify-content: center;
